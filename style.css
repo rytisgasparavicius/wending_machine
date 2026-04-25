@@ -179,6 +179,46 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin-top: 40px;
 }
+.profile-highlight {
+    background: linear-gradient(135deg, #fdf7f0 0%, #fffaf5 100%);
+}
+.profile-card {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 24px;
+    border-radius: 32px;
+    background: white;
+    box-shadow: 0 24px 60px rgba(15,23,42,0.08);
+    border: 1px solid rgba(15,23,42,0.08);
+}
+.profile-avatar {
+    width: 100%;
+    border-radius: 28px;
+    object-fit: cover;
+    min-height: 360px;
+}
+.profile-copy {
+    display: grid;
+    gap: 16px;
+}
+.profile-copy h2 {
+    margin: 0;
+    font-size: clamp(1.9rem, 2.5vw, 2.4rem);
+    line-height: 1.1;
+}
+.profile-copy p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.8;
+}
+.profile-guidance {
+    color: #0f766e;
+    font-weight: 700;
+}
 .product-card {
     position: relative;
     overflow: hidden;
