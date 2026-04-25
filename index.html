@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruterija - Švieži Vaisiai ir Daržovės</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .price {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .newsletter {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fruterija</h1>
+        <p>Fizinė vaisių ir daržovių parduotuvė</p>
+        <nav>
+            <a href="#vaisiai">Vaisiai ir Daržovės</a>
+            <a href="#eshop">E-parduotuvė</a>
+            <a href="#kontaktai">Kontaktai</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Išskirtiniai skoniai ir gardūs atradimai</h2>
+        <p>Kruopščiai atrinkti produktai skonio ieškotojams</p>
+        <a href="#eshop" style="color: white; text-decoration: underline;">E.PARDUOTUVĖ</a>
+    </div>
+
+    <div class="section">
+        <h2>UNIKALŪS SKONIŲ ATRADIMAI</h2>
+        <p>Atrinkome išskirtinius produktus tiems, kurie ieško ne tik kokybės, bet ir naujų skonių patirčių.</p>
+        <a href="#eshop" style="color: #4CAF50; text-decoration: underline;">PIRKTI DABAR</a>
+    </div>
+
+    <div class="section" id="vaisiai">
+        <h2>ŠIOS SAVAITĖS VAISIŲ IR DARŽOVIŲ NAUJIENOS</h2>
+        <p>Vaisius ir daržoves galite įsigyti tik fizinėje parduotuvėje.</p>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?w=400" alt="Raudonos Slyvos">
+                <h3>Raudonos Slyvos</h3>
+                <p class="price">2.00 € (2 kg)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1603833665858-e61e17a86224?w=400" alt="Mango">
+                <h3>Mango</h3>
+                <p class="price">11.50 € (3 vnt)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1561136594-7f68413e612?w=400" alt="Žalios Vynuogės">
+                <h3>Žalios Vynuogės</h3>
+                <p class="price">3.00 € (500 g)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1449300079323-02bea8a8a8b6?w=400" alt="Ananasai">
+                <h3>Ananasai</h3>
+                <p class="price">6.00 € (1 vnt)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="eshop">
+        <h2>TOP PRODUKTAI E.PARDUOTUVĖJE</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400" alt="Alyvuogių Aliejus">
+                <h3>Alyvuogių Aliejus</h3>
+                <p class="price">19.50 € (200 ml)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400" alt="Riešutų Kremas">
+                <h3>Riešutų Kremas</h3>
+                <p class="price">16.00 € (500 g)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1514756331096-242fdeb70d4a?w=400" alt="Pagardai">
+                <h3>Pagardai</h3>
+                <p class="price">9.50 € (240 g)</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400" alt="Džiovinti Vaisiai">
+                <h3>Džiovinti Vaisiai</h3>
+                <p class="price">7.50 € (500 g)</p>
+            </div>
+        </div>
+        <a href="#eshop" style="color: #4CAF50; text-decoration: underline;">Žiūrėti visą asortimentą</a>
+    </div>
+
+    <div class="newsletter">
+        <h2>Prenumeruokite ir gaukite -5 % nuolaidą pirmam apsipirkimui!</h2>
+        <input type="email" placeholder="Jūsų el. paštas">
+        <button>Prenumeruoti</button>
+    </div>
+
+    <footer id="kontaktai">
+        <h3>SEKITE MUS SOCIALINĖJE MEDIJOJE!</h3>
+        <p>Sužinokite naujienas ir akcijas pirmieji!</p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <p>Kontaktai: silainiu turgaviete, Kaunas</p>
+        <p>Darbo laikas: I-V 10:00 - 17:00, VI 10:00 - 13:00</p>
+    </footer>
+</body>
+</html>
