@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruterija - E-shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">Fruterija</a>
+            <nav class="nav-links">
+                <a href="index.html">Pagrindinis</a>
+                <a href="assortiment.html">Asortimentas</a>
+                <a href="eshop.html">E-shop</a>
+                <a href="contacts.html">Kontaktai</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section title-center">
+        <h2>Elektroninė parduotuvė</h2>
+        <p>Pridėkite produktus į krepšelį ir greitai užsisakykite pristatymą ar paėmimą parduotuvėje.</p>
+    </section>
+
+    <section class="section section-light">
+        <div class="grid-products">
+            <article class="product-card" data-name="Obuoliai" data-price="2.50">
+                <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600" alt="Obuoliai">
+                <div class="product-card-content">
+                    <h3>Obuoliai</h3>
+                    <p>Traškūs ir saldūs obuoliai kiekvienai dienai.</p>
+                    <span class="price">2.50 €/kg</span>
+                    <button class="btn btn-primary add-cart" data-product-id="apple" data-product-name="Obuoliai" data-product-price="2.50">Įdėti į krepšelį</button>
+                </div>
+            </article>
+            <article class="product-card" data-name="Bananas" data-price="1.80">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Bananai">
+                <div class="product-card-content">
+                    <h3>Bananai</h3>
+                    <p>Puikus energijos šaltinis ir sveikas užkandis.</p>
+                    <span class="price">1.80 €/kg</span>
+                    <button class="btn btn-primary add-cart" data-product-id="banana" data-product-name="Bananai" data-product-price="1.80">Įdėti į krepšelį</button>
+                </div>
+            </article>
+            <article class="product-card" data-name="Pomidorai" data-price="3.20">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600" alt="Pomidorai">
+                <div class="product-card-content">
+                    <h3>Pomidorai</h3>
+                    <p>Švieži pomidorai, kurie pagerins kiekvieną salotas.</p>
+                    <span class="price">3.20 €/kg</span>
+                    <button class="btn btn-primary add-cart" data-product-id="tomato" data-product-name="Pomidorai" data-product-price="3.20">Įdėti į krepšelį</button>
+                </div>
+            </article>
+            <article class="product-card" data-name="Alyvuogių Aliejus" data-price="19.50">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Alyvuogių aliejus">
+                <div class="product-card-content">
+                    <h3>Alyvuogių aliejus</h3>
+                    <p>Premium klasės alyvuogių aliejus jūsų virtuvei.</p>
+                    <span class="price">19.50 €</span>
+                    <button class="btn btn-primary add-cart" data-product-id="oil" data-product-name="Alyvuogių Aliejus" data-product-price="19.50">Įdėti į krepšelį</button>
+                </div>
+            </article>
+            <article class="product-card" data-name="Riešutų Kremas" data-price="16.00">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Riešutų kremas">
+                <div class="product-card-content">
+                    <h3>Riešutų kremas</h3>
+                    <p>Natūralus kremas su geru riešutų skoniu ir kreminė tekstūra.</p>
+                    <span class="price">16.00 €</span>
+                    <button class="btn btn-primary add-cart" data-product-id="nutbutter" data-product-name="Riešutų Kremas" data-product-price="16.00">Įdėti į krepšelį</button>
+                </div>
+            </article>
+            <article class="product-card" data-name="Džiovinti Mangai" data-price="7.50">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Džiovinti mangai">
+                <div class="product-card-content">
+                    <h3>Džiovinti mangai</h3>
+                    <p>Tradicinis saldus užkandis be pridėtinio cukraus.</p>
+                    <span class="price">7.50 €/500 g</span>
+                    <button class="btn btn-primary add-cart" data-product-id="dried-mango" data-product-name="Džiovinti Mangai" data-product-price="7.50">Įdėti į krepšelį</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section section-light title-center">
+        <h2>Jūsų krepšelis</h2>
+        <p>Šis lengvas krepšelis leidžia patikrinti prekes ir baigti užsakymą per kelias sekundes.</p>
+        <div class="card">
+            <div id="cart-empty">Jūsų krepšelis tuščias. Pridėkite produktų, kad tęstumėte.</div>
+            <div id="cart-items"></div>
+            <div class="cart-summary" style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+                <strong>Viso:</strong>
+                <span id="cart-total">0,00 €</span>
+                <button id="checkout-button" class="btn btn-primary" disabled>Užsakyti dabar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <h3>Fruterija</h3>
+                <p>Pirkite greitai ir saugiai per mūsų e-parduotuvę.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Pagrindinis</a>
+                <a href="assortiment.html">Asortimentas</a>
+                <a href="eshop.html">E-shop</a>
+                <a href="contacts.html">Kontaktai</a>
+            </div>
+            <div>
+                <h3>Palaikymas</h3>
+                <p>info@fruterija.lt</p>
+                <p>+370 600 00000</p>
+            </div>
+            <div>
+                <h3>Adresai</h3>
+                <p>Ateities pl. 75A, Kaunas</p>
+            </div>
+            <div class="copy">© 2026 Fruterija. Visos teisės saugomos.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

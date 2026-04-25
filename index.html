@@ -3,186 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruterija - Švieži Vaisiai ir Daržovės</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-        }
-        .hero {
-            background-color: #4CAF50;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        .section {
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .product {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 20px;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .product img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .price {
-            color: #4CAF50;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .newsletter {
-            background-color: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-        }
-        .newsletter input {
-            padding: 10px;
-            width: 200px;
-            margin-right: 10px;
-        }
-        .newsletter button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        footer a {
-            color: #4CAF50;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Fruterija - Šviežios prekės ir modernus e-shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Fruterija</h1>
-        <p>Fizinė vaisių ir daržovių parduotuvė</p>
-        <nav>
-            <a href="#vaisiai">Vaisiai ir Daržovės</a>
-            <a href="#eshop">E-parduotuvė</a>
-            <a href="#kontaktai">Kontaktai</a>
-        </nav>
+        <div class="header-inner">
+            <a class="logo" href="index.html">Fruterija</a>
+            <nav class="nav-links">
+                <a href="index.html">Pagrindinis</a>
+                <a href="assortiment.html">Asortimentas</a>
+                <a href="eshop.html">E-shop</a>
+                <a href="contacts.html">Kontaktai</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="hero">
-        <h2>Išskirtiniai skoniai ir gardūs atradimai</h2>
-        <p>Kruopščiai atrinkti produktai skonio ieškotojams</p>
-        <a href="#eshop" style="color: white; text-decoration: underline;">E.PARDUOTUVĖ</a>
-    </div>
-
-    <div class="section">
-        <h2>UNIKALŪS SKONIŲ ATRADIMAI</h2>
-        <p>Atrinkome išskirtinius produktus tiems, kurie ieško ne tik kokybės, bet ir naujų skonių patirčių.</p>
-        <a href="#eshop" style="color: #4CAF50; text-decoration: underline;">PIRKTI DABAR</a>
-    </div>
-
-    <div class="section" id="vaisiai">
-        <h2>ŠIOS SAVAITĖS VAISIŲ IR DARŽOVIŲ NAUJIENOS</h2>
-        <p>Vaisius ir daržoves galite įsigyti tik fizinėje parduotuvėje.</p>
-        <div class="products">
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?w=400" alt="Raudonos Slyvos">
-                <h3>Raudonos Slyvos</h3>
-                <p class="price">2.00 € (2 kg)</p>
-            </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1603833665858-e61e17a86224?w=400" alt="Mango">
-                <h3>Mango</h3>
-                <p class="price">11.50 € (3 vnt)</p>
-            </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1561136594-7f68413e612?w=400" alt="Žalios Vynuogės">
-                <h3>Žalios Vynuogės</h3>
-                <p class="price">3.00 € (500 g)</p>
-            </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1449300079323-02bea8a8a8b6?w=400" alt="Ananasai">
-                <h3>Ananasai</h3>
-                <p class="price">6.00 € (1 vnt)</p>
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <h1>Šviežios prekės. Greitas užsakymas. Profesionali patirtis.</h1>
+                <p>Fruterija pristato kokybiškus vaisius, daržoves ir gardžius delikatesus. Įsigykite online arba atvykite į parduotuvę Kaune.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="eshop.html">Pirkti dabar</a>
+                    <a class="btn btn-secondary" href="assortiment.html">Peržiūrėti asortimentą</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section" id="eshop">
-        <h2>TOP PRODUKTAI E.PARDUOTUVĖJE</h2>
-        <div class="products">
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400" alt="Alyvuogių Aliejus">
-                <h3>Alyvuogių Aliejus</h3>
-                <p class="price">19.50 € (200 ml)</p>
+    <section class="section title-center">
+        <h2>Išskirtinis asortimentas kiekvienam</h2>
+        <p>Rinkitės iš šviežiai atrinktų vaisių, daržovių ir aukščiausios kokybės e-shop produktų. Mūsų parduotuvė sujungia tradiciją ir patogų pirkimą internetu.</p>
+    </section>
+
+    <section class="section section-light">
+        <div class="grid-products">
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=800" alt="Vaisiai">
+                <div class="product-card-content">
+                    <h3>Švieži vaisiai</h3>
+                    <p>Obuoliai, kriaušės, vynuogės, mango ir daugiau - tik patikimi tiekėjai.</p>
+                    <span class="price">Nuo 1.80 €/kg</span>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800" alt="Daržovės">
+                <div class="product-card-content">
+                    <h3>Traškios daržovės</h3>
+                    <p>Pomidorai, agurkai, morkos, bulvės - kasdienės daržovės šviežios ir saugios.</p>
+                    <span class="price">Nuo 1.20 €/kg</span>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1514516870920-443c3047d11f?w=800" alt="Delikatesai">
+                <div class="product-card-content">
+                    <h3>Delikatesai</h3>
+                    <p>Alyvuogių aliejus, riešutų kremai ir džiovinti vaisiai - viskas vienoje vietoje.</p>
+                    <span class="price">Nuo 7.50 €</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="title-center">
+            <h2>Akcijos ir savaitės naujienos</h2>
+            <p>Kiekvieną savaitę atnaujiname pasiūlymus. Sekite naujienas ir nepraleiskite geriausių kainų.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="card">
+                <h3>Raudonos slyvos</h3>
+                <p>Ši savaitė: 2.00 € už 2 kg. Skanios saldžios slyvos tiesiai iš ūkio.</p>
             </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400" alt="Riešutų Kremas">
-                <h3>Riešutų Kremas</h3>
-                <p class="price">16.00 € (500 g)</p>
+            <div class="card">
+                <h3>Mango by Air</h3>
+                <p>Idealiai prinokę mango vaisiai – 11.50 € už 3 vnt. Puikus egzotiškas pasirinkimas.</p>
             </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1514756331096-242fdeb70d4a?w=400" alt="Pagardai">
-                <h3>Pagardai</h3>
-                <p class="price">9.50 € (240 g)</p>
-            </div>
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400" alt="Džiovinti Vaisiai">
-                <h3>Džiovinti Vaisiai</h3>
-                <p class="price">7.50 € (500 g)</p>
+            <div class="card">
+                <h3>Džiovintos vynuogės</h3>
+                <p>3.00 € už 500 g. Natūraliai saldus užkandis be pridėtinio cukraus.</p>
             </div>
         </div>
-        <a href="#eshop" style="color: #4CAF50; text-decoration: underline;">Žiūrėti visą asortimentą</a>
-    </div>
+    </section>
 
-    <div class="newsletter">
-        <h2>Prenumeruokite ir gaukite -5 % nuolaidą pirmam apsipirkimui!</h2>
-        <input type="email" placeholder="Jūsų el. paštas">
-        <button>Prenumeruoti</button>
-    </div>
+    <section class="section section-light title-center">
+        <h2>Veiksminga elektroninė parduotuvė</h2>
+        <p>Per kelias sekundes įdėkite produktus į krepšelį, pasirinkite pristatymą ir patikrinkite užsakymą.</p>
+        <a class="btn btn-primary" href="eshop.html">Atidaryti e-shop</a>
+    </section>
 
-    <footer id="kontaktai">
-        <h3>SEKITE MUS SOCIALINĖJE MEDIJOJE!</h3>
-        <p>Sužinokite naujienas ir akcijas pirmieji!</p>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <p>Kontaktai: silainiu turgaviete, Kaunas</p>
-        <p>Darbo laikas: I-V 10:00 - 17:00, VI 10:00 - 13:00</p>
+    <section class="section newsletter">
+        <div class="newsletter-card">
+            <div>
+                <h2>Prenumeruokite ir gaukite -5 % nuolaidą</h2>
+                <p>Gaukite specialius pasiūlymus ir savaitės naujienas.</p>
+            </div>
+            <div class="newsletter-row">
+                <input type="email" placeholder="Jūsų el. paštas">
+                <button>Prenumeruoti</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <h3>Fruterija</h3>
+                <p>Šviežios prekės su profesionaliu aptarnavimu.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Pagrindinis</a>
+                <a href="assortiment.html">Asortimentas</a>
+                <a href="eshop.html">E-shop</a>
+                <a href="contacts.html">Kontaktai</a>
+            </div>
+            <div>
+                <h3>Kontaktai</h3>
+                <p>Ateities pl. 75A, Kaunas</p>
+                <p>I-V 10:00 - 17:00</p>
+                <p>VI 10:00 - 13:00</p>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="copy">© 2026 Fruterija. Visos teisės saugomos.</div>
+        </div>
     </footer>
 </body>
 </html>
